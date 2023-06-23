@@ -13,7 +13,7 @@ public class SquareEquation{
         double D = b*b - 4*a*c;
        
         if(D > eps){
-			double x1 = -(b + Math.Sign(b) * (Math.Sqrt(D)) / 2);
+            double x1 = -(b + Math.Sign(b) * (Math.Sqrt(D)) / 2);
             double[] result = {x1, c / x1};
             return result;
         }
