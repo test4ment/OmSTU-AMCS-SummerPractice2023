@@ -41,5 +41,3 @@ public class UnitTest1
         Assert.Throws<System.ArgumentException>(() => SquareEquation.Solve(value1, value2, value3));
     }
 }
-
-//
