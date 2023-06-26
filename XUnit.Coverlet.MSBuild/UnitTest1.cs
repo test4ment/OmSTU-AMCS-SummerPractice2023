@@ -9,10 +9,11 @@ public class UnitTest1
     public void TwoRoots()
     {
         double[] Answer = SquareEquation.Solve(1, -5, 4);
-        double[] res1 = {4.0, 1.0};
-        double[] res2 = {1.0, 4.0};
+        Array.Sort(Answer);
+        double[] expected = {1.0, 4.0};
         double eps = Math.Pow(10, -9);
-        Assert.True((Answer[0] - res1[0] < eps && Answer[1] - res1[1] < eps) || (Answer[0] - res2[0] < eps && Answer[1] - res2[1] < eps));
+        Assert.Equal(Answer[0], expected[0], eps);
+        Assert.Equal(Answer[1], expected[1], eps);
     }
 
     [Fact]
@@ -21,7 +22,7 @@ public class UnitTest1
         double[] Answer = SquareEquation.Solve(1, 2, 1);
         double[] res = {-1.0};
         double eps = Math.Pow(10, -9);
-        Assert.True(Answer[0] - res[0] < eps);
+        Assert.Equal(Answer[0], res[0], eps);
     }
 
     [Fact]
@@ -37,12 +38,6 @@ public class UnitTest1
     [InlineData(1, 4, double.NegativeInfinity)]
     public void CauseErrors(double value1, double value2, double value3)
     {
-        try{
-            double[] Answer = SquareEquation.Solve(value1, value2, value3);
-            Assert.True(false, "No error thrown");
-        }
-        catch (System.ArgumentException){
-            Assert.True(true);
-        }
+        Assert.Throws<System.ArgumentException>(() => SquareEquation.Solve(value1, value2, value3));
     }
 }
