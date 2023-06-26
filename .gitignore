@@ -41,3 +41,7 @@ bld/
 msbuild.log
 msbuild.err
 msbuild.wrn
+
+/XUnit.Coverlet.Collector
+/XUnit.Coverlet.MSBuild/coverage.json
+/XUnit.Coverage.sln.bak

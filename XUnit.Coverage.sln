@@ -5,8 +5,6 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SquareEq", "SquareEq\SquareEq.csproj", "{C0FC7333-D732-4C7E-A5B3-85702EF4C7E6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XUnit.Coverlet.Collector", "XUnit.Coverlet.Collector\XUnit.Coverlet.Collector.csproj", "{0D3DE865-9E83-470D-B658-1444F9BC7DA7}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XUnit.Coverlet.MSBuild", "XUnit.Coverlet.MSBuild\XUnit.Coverlet.MSBuild.csproj", "{CCCFDF2A-069C-4EC0-855B-4775E5C45256}"
 EndProject
 Global
@@ -22,10 +20,6 @@ Global
 		{C0FC7333-D732-4C7E-A5B3-85702EF4C7E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C0FC7333-D732-4C7E-A5B3-85702EF4C7E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C0FC7333-D732-4C7E-A5B3-85702EF4C7E6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0D3DE865-9E83-470D-B658-1444F9BC7DA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0D3DE865-9E83-470D-B658-1444F9BC7DA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0D3DE865-9E83-470D-B658-1444F9BC7DA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0D3DE865-9E83-470D-B658-1444F9BC7DA7}.Release|Any CPU.Build.0 = Release|Any CPU
 		{CCCFDF2A-069C-4EC0-855B-4775E5C45256}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{CCCFDF2A-069C-4EC0-855B-4775E5C45256}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CCCFDF2A-069C-4EC0-855B-4775E5C45256}.Release|Any CPU.ActiveCfg = Release|Any CPU
