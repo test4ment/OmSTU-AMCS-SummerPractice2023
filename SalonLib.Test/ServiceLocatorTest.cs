@@ -18,3 +18,9 @@ public class ServiceLocatorTest
         Assert.Equal(expected, actual);
     }
 }
+namespace SalonLib.Test;
+
+public class ServiceLocatorTest
+{
+
+}
