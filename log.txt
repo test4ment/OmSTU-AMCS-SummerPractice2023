@@ -1,0 +1,681 @@
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+  SpecFlowFeatureFiles: Features/SquareEquation.feature
+  -> Using default config
+  SpecFlowGeneratedFiles: Features/SquareEquation.feature.cs
+  SquareEq -> /home/ubuntu/OmSTU-AMCS-SummerPractice2023/SquareEq/bin/Debug/net7.0/SquareEq.dll
+  Specflowproj -> /home/ubuntu/OmSTU-AMCS-SummerPractice2023/Specflowproj/bin/Debug/net7.0/Specflowproj.dll
+Test run for /home/ubuntu/OmSTU-AMCS-SummerPractice2023/Specflowproj/bin/Debug/net7.0/Specflowproj.dll (.NETCoreApp,Version=v7.0)
+Microsoft (R) Test Execution Command Line Tool Version 17.4.1+79d56b02b69a582cd90428878a5e9411ab7538f5 (x64)
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+A total of 1 test files matched the specified pattern.
+-> Loading plugin /home/ubuntu/OmSTU-AMCS-SummerPractice2023/Specflowproj/bin/Debug/net7.0/LivingDoc.SpecFlowPlugin.dll
+-> Loading plugin /home/ubuntu/OmSTU-AMCS-SummerPractice2023/Specflowproj/bin/Debug/net7.0/TechTalk.SpecFlow.xUnit.SpecFlowPlugin.dll
+-> Loading plugin /home/ubuntu/OmSTU-AMCS-SummerPractice2023/Specflowproj/bin/Debug/net7.0/Specflowproj.dll
+-> Using default config
+  Failed Коэффициент c квадратного уравнение не может быть положительной бесконечностью [815 ms]
+  Error Message:
+   TechTalk.SpecFlow.xUnit.SpecFlowPlugin.XUnitPendingStepException : Test pending: No matching step definition found for one or more steps.
+using System;
+using TechTalk.SpecFlow;
+
+namespace MyNamespace
+{
+    [Binding]
+    public class StepDefinitions
+    {
+        private readonly ScenarioContext _scenarioContext;
+
+        public StepDefinitions(ScenarioContext scenarioContext)
+        {
+            _scenarioContext = scenarioContext;
+        }
+        [Given(@"Квадратное уравнение с коэффициентами \((.*), (.*), Double\.PositiveInfinity\)")]
+        public void GivenКвадратноеУравнениеСКоэффициентамиDouble_PositiveInfinity(int p0, int p1)
+        {
+            _scenarioContext.Pending();
+        }
+    }
+}
+
+  Stack Trace:
+     at TechTalk.SpecFlow.xUnit.SpecFlowPlugin.XUnitRuntimeProvider.TestPending(String message)
+   at TechTalk.SpecFlow.ErrorHandling.ErrorProvider.ThrowPendingError(ScenarioExecutionStatus testStatus, String message)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   at Specflowproj.Features.SquareEquationFeature.ScenarioCleanup()
+   at Specflowproj.Features.SquareEquationFeature.КоэффициентCКвадратногоУравнениеНеМожетБытьПоложительнойБесконечностью() in /home/ubuntu/OmSTU-AMCS-SummerPractice2023/Specflowproj/Features/SquareEquation.feature:line 61
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)
+  Standard Output Messages:
+ Given Квадратное уравнение с коэффициентами (1, 0, Double.PositiveInfinity)
+ -> No matching step definition found for the step. Use the following code to create one:
+         [Given(@"Квадратное уравнение с коэффициентами \((.*), (.*), Double\.PositiveInfinity\)")]
+         public void GivenКвадратноеУравнениеСКоэффициентамиDouble_PositiveInfinity(int p0, int p1)
+         {
+             _scenarioContext.Pending();
+         }
+ 
+ When вычисляются корни квадратного уравнения
+ -> skipped because of previous errors
+ Then выбрасывается исключение ArgumentException
+ -> skipped because of previous errors
+
+
+  Failed Если дискриминант квадратного уравнения больше 0, то квадратное уравнение имеет два корня кратности 1 [233 ms]
+  Error Message:
+   TechTalk.SpecFlow.xUnit.SpecFlowPlugin.XUnitPendingStepException : Test pending: No matching step definition found for one or more steps.
+using System;
+using TechTalk.SpecFlow;
+
+namespace MyNamespace
+{
+    [Binding]
+    public class StepDefinitions
+    {
+        private readonly ScenarioContext _scenarioContext;
+
+        public StepDefinitions(ScenarioContext scenarioContext)
+        {
+            _scenarioContext = scenarioContext;
+        }
+        [Given(@"Квадратное уравнение с коэффициентами \((.*), (.*), (.*)\)")]
+        public void GivenКвадратноеУравнениеСКоэффициентами(int p0, int p1, int p2)
+        {
+            _scenarioContext.Pending();
+        }
+        
+        [Then(@"квадратное уравнение имеет два корня \((.*), (.*)\) кратности один")]
+        public void ThenКвадратноеУравнениеИмеетДваКорняКратностиОдин(int p0, int p1)
+        {
+            _scenarioContext.Pending();
+        }
+    }
+}
+
+  Stack Trace:
+     at TechTalk.SpecFlow.xUnit.SpecFlowPlugin.XUnitRuntimeProvider.TestPending(String message)
+   at TechTalk.SpecFlow.ErrorHandling.ErrorProvider.ThrowPendingError(ScenarioExecutionStatus testStatus, String message)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   at Specflowproj.Features.SquareEquationFeature.ScenarioCleanup()
+   at Specflowproj.Features.SquareEquationFeature.ЕслиДискриминантКвадратногоУравненияБольше0ТоКвадратноеУравнениеИмеетДваКорняКратности1() in /home/ubuntu/OmSTU-AMCS-SummerPractice2023/Specflowproj/Features/SquareEquation.feature:line 6
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)
+  Standard Output Messages:
+ Given Квадратное уравнение с коэффициентами (1, 0, -1)
+ -> No matching step definition found for the step. Use the following code to create one:
+         [Given(@"Квадратное уравнение с коэффициентами \((.*), (.*), (.*)\)")]
+         public void GivenКвадратноеУравнениеСКоэффициентами(int p0, int p1, int p2)
+         {
+             _scenarioContext.Pending();
+         }
+ 
+ When вычисляются корни квадратного уравнения
+ -> skipped because of previous errors
+ Then квадратное уравнение имеет два корня (1, -1) кратности один
+ -> No matching step definition found for the step. Use the following code to create one:
+         [Then(@"квадратное уравнение имеет два корня \((.*), (.*)\) кратности один")]
+         public void ThenКвадратноеУравнениеИмеетДваКорняКратностиОдин(int p0, int p1)
+         {
+             _scenarioContext.Pending();
+         }
+ 
+
+
+  Failed Коэффициент a квадратного уравнение не может быть отрицательной бесконечностью [206 ms]
+  Error Message:
+   TechTalk.SpecFlow.xUnit.SpecFlowPlugin.XUnitPendingStepException : Test pending: No matching step definition found for one or more steps.
+using System;
+using TechTalk.SpecFlow;
+
+namespace MyNamespace
+{
+    [Binding]
+    public class StepDefinitions
+    {
+        private readonly ScenarioContext _scenarioContext;
+
+        public StepDefinitions(ScenarioContext scenarioContext)
+        {
+            _scenarioContext = scenarioContext;
+        }
+        [Given(@"Квадратное уравнение с коэффициентами \(Double\.NegativeInfinity, (.*), (.*)\)")]
+        public void GivenКвадратноеУравнениеСКоэффициентамиDouble_NegativeInfinity(int p0, int p1)
+        {
+            _scenarioContext.Pending();
+        }
+    }
+}
+
+  Stack Trace:
+     at TechTalk.SpecFlow.xUnit.SpecFlowPlugin.XUnitRuntimeProvider.TestPending(String message)
+   at TechTalk.SpecFlow.ErrorHandling.ErrorProvider.ThrowPendingError(ScenarioExecutionStatus testStatus, String message)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   at Specflowproj.Features.SquareEquationFeature.ScenarioCleanup()
+   at Specflowproj.Features.SquareEquationFeature.КоэффициентAКвадратногоУравнениеНеМожетБытьОтрицательнойБесконечностью() in /home/ubuntu/OmSTU-AMCS-SummerPractice2023/Specflowproj/Features/SquareEquation.feature:line 36
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)
+  Standard Output Messages:
+ Given Квадратное уравнение с коэффициентами (Double.NegativeInfinity, 0, 1)
+ -> No matching step definition found for the step. Use the following code to create one:
+         [Given(@"Квадратное уравнение с коэффициентами \(Double\.NegativeInfinity, (.*), (.*)\)")]
+         public void GivenКвадратноеУравнениеСКоэффициентамиDouble_NegativeInfinity(int p0, int p1)
+         {
+             _scenarioContext.Pending();
+         }
+ 
+ When вычисляются корни квадратного уравнения
+ -> skipped because of previous errors
+ Then выбрасывается исключение ArgumentException
+ -> skipped because of previous errors
+
+
+  Failed Если дискриминант квадратного уравнения равен 0, то квадратное уравнение имеет один корень кратности 2 [364 ms]
+  Error Message:
+   TechTalk.SpecFlow.xUnit.SpecFlowPlugin.XUnitPendingStepException : Test pending: No matching step definition found for one or more steps.
+using System;
+using TechTalk.SpecFlow;
+
+namespace MyNamespace
+{
+    [Binding]
+    public class StepDefinitions
+    {
+        private readonly ScenarioContext _scenarioContext;
+
+        public StepDefinitions(ScenarioContext scenarioContext)
+        {
+            _scenarioContext = scenarioContext;
+        }
+        [Given(@"Квадратное уравнение с коэффициентами \((.*), (.*), (.*)\)")]
+        public void GivenКвадратноеУравнениеСКоэффициентами(int p0, int p1, int p2)
+        {
+            _scenarioContext.Pending();
+        }
+        
+        [Then(@"квадратное уравнение имеет один корень (.*) кратности два")]
+        public void ThenКвадратноеУравнениеИмеетОдинКореньКратностиДва(int p0)
+        {
+            _scenarioContext.Pending();
+        }
+    }
+}
+
+  Stack Trace:
+     at TechTalk.SpecFlow.xUnit.SpecFlowPlugin.XUnitRuntimeProvider.TestPending(String message)
+   at TechTalk.SpecFlow.ErrorHandling.ErrorProvider.ThrowPendingError(ScenarioExecutionStatus testStatus, String message)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   at Specflowproj.Features.SquareEquationFeature.ScenarioCleanup()
+   at Specflowproj.Features.SquareEquationFeature.ЕслиДискриминантКвадратногоУравненияРавен0ТоКвадратноеУравнениеИмеетОдинКореньКратности2() in /home/ubuntu/OmSTU-AMCS-SummerPractice2023/Specflowproj/Features/SquareEquation.feature:line 11
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)
+  Standard Output Messages:
+ Given Квадратное уравнение с коэффициентами (1, -2, 1)
+ -> No matching step definition found for the step. Use the following code to create one:
+         [Given(@"Квадратное уравнение с коэффициентами \((.*), (.*), (.*)\)")]
+         public void GivenКвадратноеУравнениеСКоэффициентами(int p0, int p1, int p2)
+         {
+             _scenarioContext.Pending();
+         }
+ 
+ When вычисляются корни квадратного уравнения
+ -> skipped because of previous errors
+ Then квадратное уравнение имеет один корень 1 кратности два
+ -> No matching step definition found for the step. Use the following code to create one:
+         [Then(@"квадратное уравнение имеет один корень (.*) кратности два")]
+         public void ThenКвадратноеУравнениеИмеетОдинКореньКратностиДва(int p0)
+         {
+             _scenarioContext.Pending();
+         }
+ 
+
+
+  Failed Коэффициент c квадратного уравнение не может быть отрицательной бесконечностью [149 ms]
+  Error Message:
+   TechTalk.SpecFlow.xUnit.SpecFlowPlugin.XUnitPendingStepException : Test pending: No matching step definition found for one or more steps.
+using System;
+using TechTalk.SpecFlow;
+
+namespace MyNamespace
+{
+    [Binding]
+    public class StepDefinitions
+    {
+        private readonly ScenarioContext _scenarioContext;
+
+        public StepDefinitions(ScenarioContext scenarioContext)
+        {
+            _scenarioContext = scenarioContext;
+        }
+        [Given(@"Квадратное уравнение с коэффициентами \((.*), (.*), Double\.NegativeInfinity\)")]
+        public void GivenКвадратноеУравнениеСКоэффициентамиDouble_NegativeInfinity(int p0, int p1)
+        {
+            _scenarioContext.Pending();
+        }
+    }
+}
+
+  Stack Trace:
+     at TechTalk.SpecFlow.xUnit.SpecFlowPlugin.XUnitRuntimeProvider.TestPending(String message)
+   at TechTalk.SpecFlow.ErrorHandling.ErrorProvider.ThrowPendingError(ScenarioExecutionStatus testStatus, String message)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   at Specflowproj.Features.SquareEquationFeature.ScenarioCleanup()
+   at Specflowproj.Features.SquareEquationFeature.КоэффициентCКвадратногоУравнениеНеМожетБытьОтрицательнойБесконечностью() in /home/ubuntu/OmSTU-AMCS-SummerPractice2023/Specflowproj/Features/SquareEquation.feature:line 66
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)
+  Standard Output Messages:
+ Given Квадратное уравнение с коэффициентами (1, 0, Double.NegativeInfinity)
+ -> No matching step definition found for the step. Use the following code to create one:
+         [Given(@"Квадратное уравнение с коэффициентами \((.*), (.*), Double\.NegativeInfinity\)")]
+         public void GivenКвадратноеУравнениеСКоэффициентамиDouble_NegativeInfinity(int p0, int p1)
+         {
+             _scenarioContext.Pending();
+         }
+ 
+ When вычисляются корни квадратного уравнения
+ -> skipped because of previous errors
+ Then выбрасывается исключение ArgumentException
+ -> skipped because of previous errors
+
+
+  Failed Коэффициент a квадратного уравнение не может быть положительной бесконечностью [205 ms]
+  Error Message:
+   TechTalk.SpecFlow.xUnit.SpecFlowPlugin.XUnitPendingStepException : Test pending: No matching step definition found for one or more steps.
+using System;
+using TechTalk.SpecFlow;
+
+namespace MyNamespace
+{
+    [Binding]
+    public class StepDefinitions
+    {
+        private readonly ScenarioContext _scenarioContext;
+
+        public StepDefinitions(ScenarioContext scenarioContext)
+        {
+            _scenarioContext = scenarioContext;
+        }
+        [Given(@"Квадратное уравнение с коэффициентами \(Double\.PositiveInfinity, (.*), (.*)\)")]
+        public void GivenКвадратноеУравнениеСКоэффициентамиDouble_PositiveInfinity(int p0, int p1)
+        {
+            _scenarioContext.Pending();
+        }
+    }
+}
+
+  Stack Trace:
+     at TechTalk.SpecFlow.xUnit.SpecFlowPlugin.XUnitRuntimeProvider.TestPending(String message)
+   at TechTalk.SpecFlow.ErrorHandling.ErrorProvider.ThrowPendingError(ScenarioExecutionStatus testStatus, String message)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   at Specflowproj.Features.SquareEquationFeature.ScenarioCleanup()
+   at Specflowproj.Features.SquareEquationFeature.КоэффициентAКвадратногоУравнениеНеМожетБытьПоложительнойБесконечностью() in /home/ubuntu/OmSTU-AMCS-SummerPractice2023/Specflowproj/Features/SquareEquation.feature:line 31
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)
+  Standard Output Messages:
+ Given Квадратное уравнение с коэффициентами (Double.PositiveInfinity, 0, 1)
+ -> No matching step definition found for the step. Use the following code to create one:
+         [Given(@"Квадратное уравнение с коэффициентами \(Double\.PositiveInfinity, (.*), (.*)\)")]
+         public void GivenКвадратноеУравнениеСКоэффициентамиDouble_PositiveInfinity(int p0, int p1)
+         {
+             _scenarioContext.Pending();
+         }
+ 
+ When вычисляются корни квадратного уравнения
+ -> skipped because of previous errors
+ Then выбрасывается исключение ArgumentException
+ -> skipped because of previous errors
+
+
+  Failed Коэффициент c квадратного уравнение не может быть не числом [174 ms]
+  Error Message:
+   TechTalk.SpecFlow.xUnit.SpecFlowPlugin.XUnitPendingStepException : Test pending: No matching step definition found for one or more steps.
+using System;
+using TechTalk.SpecFlow;
+
+namespace MyNamespace
+{
+    [Binding]
+    public class StepDefinitions
+    {
+        private readonly ScenarioContext _scenarioContext;
+
+        public StepDefinitions(ScenarioContext scenarioContext)
+        {
+            _scenarioContext = scenarioContext;
+        }
+        [Given(@"Квадратное уравнение с коэффициентами \((.*), (.*), NaN\)")]
+        public void GivenКвадратноеУравнениеСКоэффициентамиNaN(int p0, int p1)
+        {
+            _scenarioContext.Pending();
+        }
+    }
+}
+
+  Stack Trace:
+     at TechTalk.SpecFlow.xUnit.SpecFlowPlugin.XUnitRuntimeProvider.TestPending(String message)
+   at TechTalk.SpecFlow.ErrorHandling.ErrorProvider.ThrowPendingError(ScenarioExecutionStatus testStatus, String message)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   at Specflowproj.Features.SquareEquationFeature.ScenarioCleanup()
+   at Specflowproj.Features.SquareEquationFeature.КоэффициентCКвадратногоУравнениеНеМожетБытьНеЧислом() in /home/ubuntu/OmSTU-AMCS-SummerPractice2023/Specflowproj/Features/SquareEquation.feature:line 56
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)
+  Standard Output Messages:
+ Given Квадратное уравнение с коэффициентами (1, 0, NaN)
+ -> No matching step definition found for the step. Use the following code to create one:
+         [Given(@"Квадратное уравнение с коэффициентами \((.*), (.*), NaN\)")]
+         public void GivenКвадратноеУравнениеСКоэффициентамиNaN(int p0, int p1)
+         {
+             _scenarioContext.Pending();
+         }
+ 
+ When вычисляются корни квадратного уравнения
+ -> skipped because of previous errors
+ Then выбрасывается исключение ArgumentException
+ -> skipped because of previous errors
+
+
+  Failed Коэффициент a квадратного уравнения не может быть равен 0 [95 ms]
+  Error Message:
+   TechTalk.SpecFlow.xUnit.SpecFlowPlugin.XUnitPendingStepException : Test pending: No matching step definition found for one or more steps.
+using System;
+using TechTalk.SpecFlow;
+
+namespace MyNamespace
+{
+    [Binding]
+    public class StepDefinitions
+    {
+        private readonly ScenarioContext _scenarioContext;
+
+        public StepDefinitions(ScenarioContext scenarioContext)
+        {
+            _scenarioContext = scenarioContext;
+        }
+        [Given(@"Квадратное уравнение с коэффициентами \((.*)e(.*), (.*), (.*)\)")]
+        public void GivenКвадратноеУравнениеСКоэффициентамиE(int p0, int p1, int p2, int p3)
+        {
+            _scenarioContext.Pending();
+        }
+    }
+}
+
+  Stack Trace:
+     at TechTalk.SpecFlow.xUnit.SpecFlowPlugin.XUnitRuntimeProvider.TestPending(String message)
+   at TechTalk.SpecFlow.ErrorHandling.ErrorProvider.ThrowPendingError(ScenarioExecutionStatus testStatus, String message)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   at Specflowproj.Features.SquareEquationFeature.ScenarioCleanup()
+   at Specflowproj.Features.SquareEquationFeature.КоэффициентAКвадратногоУравненияНеМожетБытьРавен0() in /home/ubuntu/OmSTU-AMCS-SummerPractice2023/Specflowproj/Features/SquareEquation.feature:line 21
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)
+  Standard Output Messages:
+ Given Квадратное уравнение с коэффициентами (1e-7, 0, 1)
+ -> No matching step definition found for the step. Use the following code to create one:
+         [Given(@"Квадратное уравнение с коэффициентами \((.*)e(.*), (.*), (.*)\)")]
+         public void GivenКвадратноеУравнениеСКоэффициентамиE(int p0, int p1, int p2, int p3)
+         {
+             _scenarioContext.Pending();
+         }
+ 
+ When вычисляются корни квадратного уравнения
+ -> skipped because of previous errors
+ Then выбрасывается исключение ArgumentException
+ -> skipped because of previous errors
+
+
+  Failed Коэффициент b квадратного уравнение не может быть отрицательной бесконечностью [101 ms]
+  Error Message:
+   TechTalk.SpecFlow.xUnit.SpecFlowPlugin.XUnitPendingStepException : Test pending: No matching step definition found for one or more steps.
+using System;
+using TechTalk.SpecFlow;
+
+namespace MyNamespace
+{
+    [Binding]
+    public class StepDefinitions
+    {
+        private readonly ScenarioContext _scenarioContext;
+
+        public StepDefinitions(ScenarioContext scenarioContext)
+        {
+            _scenarioContext = scenarioContext;
+        }
+        [Given(@"Квадратное уравнение с коэффициентами \((.*), Double\.NegativeInfinity, (.*)\)")]
+        public void GivenКвадратноеУравнениеСКоэффициентамиDouble_NegativeInfinity(int p0, int p1)
+        {
+            _scenarioContext.Pending();
+        }
+    }
+}
+
+  Stack Trace:
+     at TechTalk.SpecFlow.xUnit.SpecFlowPlugin.XUnitRuntimeProvider.TestPending(String message)
+   at TechTalk.SpecFlow.ErrorHandling.ErrorProvider.ThrowPendingError(ScenarioExecutionStatus testStatus, String message)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   at Specflowproj.Features.SquareEquationFeature.ScenarioCleanup()
+   at Specflowproj.Features.SquareEquationFeature.КоэффициентBКвадратногоУравнениеНеМожетБытьОтрицательнойБесконечностью() in /home/ubuntu/OmSTU-AMCS-SummerPractice2023/Specflowproj/Features/SquareEquation.feature:line 51
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)
+  Standard Output Messages:
+ Given Квадратное уравнение с коэффициентами (1, Double.NegativeInfinity, 1)
+ -> No matching step definition found for the step. Use the following code to create one:
+         [Given(@"Квадратное уравнение с коэффициентами \((.*), Double\.NegativeInfinity, (.*)\)")]
+         public void GivenКвадратноеУравнениеСКоэффициентамиDouble_NegativeInfinity(int p0, int p1)
+         {
+             _scenarioContext.Pending();
+         }
+ 
+ When вычисляются корни квадратного уравнения
+ -> skipped because of previous errors
+ Then выбрасывается исключение ArgumentException
+ -> skipped because of previous errors
+
+
+  Failed Коэффициент b квадратного уравнение не может быть положительной бесконечностью [77 ms]
+  Error Message:
+   TechTalk.SpecFlow.xUnit.SpecFlowPlugin.XUnitPendingStepException : Test pending: No matching step definition found for one or more steps.
+using System;
+using TechTalk.SpecFlow;
+
+namespace MyNamespace
+{
+    [Binding]
+    public class StepDefinitions
+    {
+        private readonly ScenarioContext _scenarioContext;
+
+        public StepDefinitions(ScenarioContext scenarioContext)
+        {
+            _scenarioContext = scenarioContext;
+        }
+        [Given(@"Квадратное уравнение с коэффициентами \((.*), Double\.PositiveInfinity, (.*)\)")]
+        public void GivenКвадратноеУравнениеСКоэффициентамиDouble_PositiveInfinity(int p0, int p1)
+        {
+            _scenarioContext.Pending();
+        }
+    }
+}
+
+  Stack Trace:
+     at TechTalk.SpecFlow.xUnit.SpecFlowPlugin.XUnitRuntimeProvider.TestPending(String message)
+   at TechTalk.SpecFlow.ErrorHandling.ErrorProvider.ThrowPendingError(ScenarioExecutionStatus testStatus, String message)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   at Specflowproj.Features.SquareEquationFeature.ScenarioCleanup()
+   at Specflowproj.Features.SquareEquationFeature.КоэффициентBКвадратногоУравнениеНеМожетБытьПоложительнойБесконечностью() in /home/ubuntu/OmSTU-AMCS-SummerPractice2023/Specflowproj/Features/SquareEquation.feature:line 46
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)
+  Standard Output Messages:
+ Given Квадратное уравнение с коэффициентами (1, Double.PositiveInfinity, 1)
+ -> No matching step definition found for the step. Use the following code to create one:
+         [Given(@"Квадратное уравнение с коэффициентами \((.*), Double\.PositiveInfinity, (.*)\)")]
+         public void GivenКвадратноеУравнениеСКоэффициентамиDouble_PositiveInfinity(int p0, int p1)
+         {
+             _scenarioContext.Pending();
+         }
+ 
+ When вычисляются корни квадратного уравнения
+ -> skipped because of previous errors
+ Then выбрасывается исключение ArgumentException
+ -> skipped because of previous errors
+
+
+  Failed Коэффициент a квадратного уравнение не может быть не числом [99 ms]
+  Error Message:
+   TechTalk.SpecFlow.xUnit.SpecFlowPlugin.XUnitPendingStepException : Test pending: No matching step definition found for one or more steps.
+using System;
+using TechTalk.SpecFlow;
+
+namespace MyNamespace
+{
+    [Binding]
+    public class StepDefinitions
+    {
+        private readonly ScenarioContext _scenarioContext;
+
+        public StepDefinitions(ScenarioContext scenarioContext)
+        {
+            _scenarioContext = scenarioContext;
+        }
+        [Given(@"Квадратное уравнение с коэффициентами \(NaN, (.*), (.*)\)")]
+        public void GivenКвадратноеУравнениеСКоэффициентамиNaN(int p0, int p1)
+        {
+            _scenarioContext.Pending();
+        }
+    }
+}
+
+  Stack Trace:
+     at TechTalk.SpecFlow.xUnit.SpecFlowPlugin.XUnitRuntimeProvider.TestPending(String message)
+   at TechTalk.SpecFlow.ErrorHandling.ErrorProvider.ThrowPendingError(ScenarioExecutionStatus testStatus, String message)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   at Specflowproj.Features.SquareEquationFeature.ScenarioCleanup()
+   at Specflowproj.Features.SquareEquationFeature.КоэффициентAКвадратногоУравнениеНеМожетБытьНеЧислом() in /home/ubuntu/OmSTU-AMCS-SummerPractice2023/Specflowproj/Features/SquareEquation.feature:line 26
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)
+  Standard Output Messages:
+ Given Квадратное уравнение с коэффициентами (NaN, 0, 1)
+ -> No matching step definition found for the step. Use the following code to create one:
+         [Given(@"Квадратное уравнение с коэффициентами \(NaN, (.*), (.*)\)")]
+         public void GivenКвадратноеУравнениеСКоэффициентамиNaN(int p0, int p1)
+         {
+             _scenarioContext.Pending();
+         }
+ 
+ When вычисляются корни квадратного уравнения
+ -> skipped because of previous errors
+ Then выбрасывается исключение ArgumentException
+ -> skipped because of previous errors
+
+
+  Failed Коэффициент b квадратного уравнение не может быть не числом [83 ms]
+  Error Message:
+   TechTalk.SpecFlow.xUnit.SpecFlowPlugin.XUnitPendingStepException : Test pending: No matching step definition found for one or more steps.
+using System;
+using TechTalk.SpecFlow;
+
+namespace MyNamespace
+{
+    [Binding]
+    public class StepDefinitions
+    {
+        private readonly ScenarioContext _scenarioContext;
+
+        public StepDefinitions(ScenarioContext scenarioContext)
+        {
+            _scenarioContext = scenarioContext;
+        }
+        [Given(@"Квадратное уравнение с коэффициентами \((.*), NaN, (.*)\)")]
+        public void GivenКвадратноеУравнениеСКоэффициентамиNaN(int p0, int p1)
+        {
+            _scenarioContext.Pending();
+        }
+    }
+}
+
+  Stack Trace:
+     at TechTalk.SpecFlow.xUnit.SpecFlowPlugin.XUnitRuntimeProvider.TestPending(String message)
+   at TechTalk.SpecFlow.ErrorHandling.ErrorProvider.ThrowPendingError(ScenarioExecutionStatus testStatus, String message)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   at Specflowproj.Features.SquareEquationFeature.ScenarioCleanup()
+   at Specflowproj.Features.SquareEquationFeature.КоэффициентBКвадратногоУравнениеНеМожетБытьНеЧислом() in /home/ubuntu/OmSTU-AMCS-SummerPractice2023/Specflowproj/Features/SquareEquation.feature:line 41
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)
+  Standard Output Messages:
+ Given Квадратное уравнение с коэффициентами (1, NaN, 1)
+ -> No matching step definition found for the step. Use the following code to create one:
+         [Given(@"Квадратное уравнение с коэффициентами \((.*), NaN, (.*)\)")]
+         public void GivenКвадратноеУравнениеСКоэффициентамиNaN(int p0, int p1)
+         {
+             _scenarioContext.Pending();
+         }
+ 
+ When вычисляются корни квадратного уравнения
+ -> skipped because of previous errors
+ Then выбрасывается исключение ArgumentException
+ -> skipped because of previous errors
+
+
+-> LivingDocPlugin: Output generated in: /home/ubuntu/OmSTU-AMCS-SummerPractice2023/Specflowproj/bin/Debug/net7.0/TestExecution.json
+  Failed Если дискриминант квадратного уравнения меньше 0, то квадратное уравнение не имеет корней [106 ms]
+  Error Message:
+   TechTalk.SpecFlow.xUnit.SpecFlowPlugin.XUnitPendingStepException : Test pending: No matching step definition found for one or more steps.
+using System;
+using TechTalk.SpecFlow;
+
+namespace MyNamespace
+{
+    [Binding]
+    public class StepDefinitions
+    {
+        private readonly ScenarioContext _scenarioContext;
+
+        public StepDefinitions(ScenarioContext scenarioContext)
+        {
+            _scenarioContext = scenarioContext;
+        }
+        [Given(@"Квадратное уравнение с коэффициентами \((.*), (.*), (.*)\)")]
+        public void GivenКвадратноеУравнениеСКоэффициентами(int p0, int p1, int p2)
+        {
+            _scenarioContext.Pending();
+        }
+    }
+}
+
+  Stack Trace:
+     at TechTalk.SpecFlow.xUnit.SpecFlowPlugin.XUnitRuntimeProvider.TestPending(String message)
+   at TechTalk.SpecFlow.ErrorHandling.ErrorProvider.ThrowPendingError(ScenarioExecutionStatus testStatus, String message)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   at Specflowproj.Features.SquareEquationFeature.ScenarioCleanup()
+   at Specflowproj.Features.SquareEquationFeature.ЕслиДискриминантКвадратногоУравненияМеньше0ТоКвадратноеУравнениеНеИмеетКорней() in /home/ubuntu/OmSTU-AMCS-SummerPractice2023/Specflowproj/Features/SquareEquation.feature:line 16
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)
+  Standard Output Messages:
+ Given Квадратное уравнение с коэффициентами (1, 0, 1)
+ -> No matching step definition found for the step. Use the following code to create one:
+         [Given(@"Квадратное уравнение с коэффициентами \((.*), (.*), (.*)\)")]
+         public void GivenКвадратноеУравнениеСКоэффициентами(int p0, int p1, int p2)
+         {
+             _scenarioContext.Pending();
+         }
+ 
+ When вычисляются корни квадратного уравнения
+ -> skipped because of previous errors
+ Then множество корней квадратного уравнения пустое
+ -> skipped because of previous errors
+
+
+
+Failed!  - Failed:    13, Passed:     0, Skipped:     0, Total:    13, Duration: 1 s - Specflowproj.dll (net7.0)
