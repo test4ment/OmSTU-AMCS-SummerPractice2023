@@ -24,3 +24,4 @@ jobs:
 
       - name: Unittest and coverage
         run: dotnet test Specflow.sln /p:CollectCoverage=true /p:ThresholdType=line /p:Threshold=100
+        
