@@ -1,0 +1,24 @@
+/home/ubuntu/OmSTU-AMCS-SummerPractice2023/SquareEq/bin/Debug/net7.0/SquareEq.deps.json
+/home/ubuntu/OmSTU-AMCS-SummerPractice2023/SquareEq/bin/Debug/net7.0/SquareEq.dll
+/home/ubuntu/OmSTU-AMCS-SummerPractice2023/SquareEq/bin/Debug/net7.0/SquareEq.pdb
+/home/ubuntu/OmSTU-AMCS-SummerPractice2023/SquareEq/obj/Debug/net7.0/SquareEq.csproj.AssemblyReference.cache
+/home/ubuntu/OmSTU-AMCS-SummerPractice2023/SquareEq/obj/Debug/net7.0/SquareEq.GeneratedMSBuildEditorConfig.editorconfig
+/home/ubuntu/OmSTU-AMCS-SummerPractice2023/SquareEq/obj/Debug/net7.0/SquareEq.AssemblyInfoInputs.cache
+/home/ubuntu/OmSTU-AMCS-SummerPractice2023/SquareEq/obj/Debug/net7.0/SquareEq.AssemblyInfo.cs
+/home/ubuntu/OmSTU-AMCS-SummerPractice2023/SquareEq/obj/Debug/net7.0/SquareEq.csproj.CoreCompileInputs.cache
+/home/ubuntu/OmSTU-AMCS-SummerPractice2023/SquareEq/obj/Debug/net7.0/SquareEq.dll
+/home/ubuntu/OmSTU-AMCS-SummerPractice2023/SquareEq/obj/Debug/net7.0/refint/SquareEq.dll
+/home/ubuntu/OmSTU-AMCS-SummerPractice2023/SquareEq/obj/Debug/net7.0/SquareEq.pdb
+/home/ubuntu/OmSTU-AMCS-SummerPractice2023/SquareEq/obj/Debug/net7.0/ref/SquareEq.dll
+C:\Users\90407\Desktop\OmSTU repo\OmSTU-AMCS-SummerPractice2023\OmSTU-AMCS-SummerPractice2023\SquareEq\bin\Debug\net7.0\SquareEq.deps.json
+C:\Users\90407\Desktop\OmSTU repo\OmSTU-AMCS-SummerPractice2023\OmSTU-AMCS-SummerPractice2023\SquareEq\bin\Debug\net7.0\SquareEq.dll
+C:\Users\90407\Desktop\OmSTU repo\OmSTU-AMCS-SummerPractice2023\OmSTU-AMCS-SummerPractice2023\SquareEq\bin\Debug\net7.0\SquareEq.pdb
+C:\Users\90407\Desktop\OmSTU repo\OmSTU-AMCS-SummerPractice2023\OmSTU-AMCS-SummerPractice2023\SquareEq\obj\Debug\net7.0\SquareEq.csproj.AssemblyReference.cache
+C:\Users\90407\Desktop\OmSTU repo\OmSTU-AMCS-SummerPractice2023\OmSTU-AMCS-SummerPractice2023\SquareEq\obj\Debug\net7.0\SquareEq.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\90407\Desktop\OmSTU repo\OmSTU-AMCS-SummerPractice2023\OmSTU-AMCS-SummerPractice2023\SquareEq\obj\Debug\net7.0\SquareEq.AssemblyInfoInputs.cache
+C:\Users\90407\Desktop\OmSTU repo\OmSTU-AMCS-SummerPractice2023\OmSTU-AMCS-SummerPractice2023\SquareEq\obj\Debug\net7.0\SquareEq.AssemblyInfo.cs
+C:\Users\90407\Desktop\OmSTU repo\OmSTU-AMCS-SummerPractice2023\OmSTU-AMCS-SummerPractice2023\SquareEq\obj\Debug\net7.0\SquareEq.csproj.CoreCompileInputs.cache
+C:\Users\90407\Desktop\OmSTU repo\OmSTU-AMCS-SummerPractice2023\OmSTU-AMCS-SummerPractice2023\SquareEq\obj\Debug\net7.0\SquareEq.dll
+C:\Users\90407\Desktop\OmSTU repo\OmSTU-AMCS-SummerPractice2023\OmSTU-AMCS-SummerPractice2023\SquareEq\obj\Debug\net7.0\refint\SquareEq.dll
+C:\Users\90407\Desktop\OmSTU repo\OmSTU-AMCS-SummerPractice2023\OmSTU-AMCS-SummerPractice2023\SquareEq\obj\Debug\net7.0\SquareEq.pdb
+C:\Users\90407\Desktop\OmSTU repo\OmSTU-AMCS-SummerPractice2023\OmSTU-AMCS-SummerPractice2023\SquareEq\obj\Debug\net7.0\ref\SquareEq.dll
