@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "F8WCBXJQWYJhxDN1db+d5Dzd2wi/fVxRNHuj7Y2Tz5lpUtkzPtvJFzoagvnybTzJxKuXOMCtSjkn5IJ2I9ib8w==",
+  "dgSpecHash": "E4y2MO/NtLGs7zBxUz850Wh+tiZaBHKuLlBmH3A/R2YetiAg/8btSoZx1gDMMJgV2Ww3dXDjtGM0MrilPnyQLg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\90407\\Desktop\\OmSTU repo\\OmSTU-AMCS-SummerPractice2023\\OmSTU-AMCS-SummerPractice2023\\Specflowproj\\Specflowproj.csproj",
+  "projectFilePath": "C:\\Users\\90407\\Desktop\\Repo\\OmSTU-AMCS-SummerPractice2023\\Specflowproj\\Specflowproj.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\90407\\.nuget\\packages\\bodi\\1.5.0\\bodi.1.5.0.nupkg.sha512",
     "C:\\Users\\90407\\.nuget\\packages\\fluentassertions\\5.10.3\\fluentassertions.5.10.3.nupkg.sha512",

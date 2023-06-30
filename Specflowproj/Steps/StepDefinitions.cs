@@ -1,4 +1,4 @@
-using SquareEquationLib;
+using Spaceship;
 using TechTalk.SpecFlow;
 using FluentAssertions;
 using System;
@@ -7,71 +7,58 @@ using System;
 namespace Specflowproj.Steps
 {
     [Binding]
-    public sealed class SquareEquationStepDefinitions
+    public sealed class SpaceshipMove
     {
        
        // For additional details on SpecFlow step definitions see https://go.specflow.org/doc-stepdef
 
-       private double[] coef {get; set;}
-       private double[] result {get; set;}
-       private Exception except {get; set;} 
+       private Ship spaceship = new Ship();
+       private Exception exception;
 
-       [Given(@"Квадратное уравнение с коэффициентами \((.*), (.*), (.*)\)")]
-       public void SquareEqGiven(string a, string b, string c)
+       [Given(@"космический корабль находится в точке пространства с координатами \((.*), (.*)\)")]
+       public void Shiplocgiven(double x, double y)
        {
-            this.coef = new double[3];
-            string[] coefs = {a, b, c};
-            
-            for(var i = 0; i < 3; i++){
-                if (coefs[i] == "Double.PositiveInfinity")
-                    this.coef[i] = double.PositiveInfinity;
-                else if (coefs[i] == "Double.NegativeInfinity")
-                    this.coef[i] = double.NegativeInfinity;
-                else if (coefs[i] == "NaN")
-                    this.coef[i] = double.NaN;
-                else
-                    this.coef[i] = double.Parse(coefs[i]);
-            }
+            this.spaceship.SetLoc(x, y);
        }
+
+       [Given("космический корабль, положение в пространстве которого невозможно определить")]
+       public void Shiplocnotgiven() { }
         
-       [When("вычисляются корни квадратного уравнения")]
-       public void SqEqSolve()
+       [Given(@"имеет мгновенную скорость \((.*), (.*)\)")]
+       public void Shipspeedgiven(double x, double y)
        {
-           try{
-                this.result = SquareEquationLib.SquareEquation.Solve(coef[0], coef[1], coef[2]);
+            this.spaceship.SetSpeed(x, y);
+       }
+
+       [Given("скорость корабля определить невозможно")]
+       public void Shipspeednotgiven() { }
+
+       [Given("изменить положение в пространстве космического корабля невозможно")]
+       public void CantMove(){
+           this.spaceship.SetMovingState(false);
+       }
+
+       [When("происходит прямолинейное равномерное движение без деформации")]
+       public void InvokeMove()
+       {
+        try{
+           this.spaceship.Move();
            }
-           catch(ArgumentException e){
-                except = e;
+        catch(Exception e){
+            this.exception = e;
            }
        }
 
-       [Then(@"квадратное уравнение имеет два корня \((.*), (.*)\) кратности один")]
-       public void ResultTwoRoots(double expect1, double expect2)
+       [Then(@"космический корабль перемещается в точку пространства с координатами \((.*), (.*)\)")]
+       public void ResultLoc(double expect1, double expect2)
        {
-           double[] expected = {expect1, expect2};
-           Array.Sort(expected);
-           Array.Sort(this.result);
-
-           result.Should().ContainInOrder(expected);
+           spaceship.GetLoc().Should().ContainInOrder(new double[] {expect1, expect2});
        }
 
-       [Then(@"квадратное уравнение имеет один корень (.*) кратности два")]
-       public void ResultOneRoot(double expected)
+       [Then("возникает ошибка Exception")]
+       public void ResultExcept()
        {
-           result[0].Should().Be(expected);
-       }
-
-       [Then("множество корней квадратного уравнения пустое")]
-       public void ResultEmpty()
-       {
-
-            result.Length.Should().Be(0);
-       }
-
-       [Then("выбрасывается исключение ArgumentException")]
-       public void ResultException()
-       {
-            except.Should().BeOfType<System.ArgumentException>();
+           this.exception.Should().NotBeNull();
        }
     }
 }

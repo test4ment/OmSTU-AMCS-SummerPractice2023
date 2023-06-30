@@ -17,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\SquareEq\SquareEq.csproj" />
+    <ProjectReference Include="..\Spaceship\Spaceship.csproj" />
   </ItemGroup>
 
 </Project>

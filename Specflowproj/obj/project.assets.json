@@ -2079,14 +2079,14 @@
           }
         }
       },
-      "SquareEq/1.0.0": {
+      "Spaceship/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "compile": {
-          "bin/placeholder/SquareEq.dll": {}
+          "bin/placeholder/Spaceship.dll": {}
         },
         "runtime": {
-          "bin/placeholder/SquareEq.dll": {}
+          "bin/placeholder/Spaceship.dll": {}
         }
       }
     }
@@ -6664,19 +6664,19 @@
         "xunit.skippablefact.nuspec"
       ]
     },
-    "SquareEq/1.0.0": {
+    "Spaceship/1.0.0": {
       "type": "project",
-      "path": "../SquareEq/SquareEq.csproj",
-      "msbuildProject": "../SquareEq/SquareEq.csproj"
+      "path": "../Spaceship/Spaceship.csproj",
+      "msbuildProject": "../Spaceship/Spaceship.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
       "FluentAssertions >= 5.10.3",
       "Microsoft.NET.Test.Sdk >= 16.5.0",
+      "Spaceship >= 1.0.0",
       "SpecFlow.Plus.LivingDocPlugin >= 3.9.*",
       "SpecFlow.xUnit >= 3.9.74",
-      "SquareEq >= 1.0.0",
       "xunit >= 2.4.1",
       "xunit.runner.visualstudio >= 2.4.1"
     ]
@@ -6687,11 +6687,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\90407\\Desktop\\OmSTU repo\\OmSTU-AMCS-SummerPractice2023\\OmSTU-AMCS-SummerPractice2023\\Specflowproj\\Specflowproj.csproj",
+      "projectUniqueName": "C:\\Users\\90407\\Desktop\\Repo\\OmSTU-AMCS-SummerPractice2023\\Specflowproj\\Specflowproj.csproj",
       "projectName": "Specflowproj",
-      "projectPath": "C:\\Users\\90407\\Desktop\\OmSTU repo\\OmSTU-AMCS-SummerPractice2023\\OmSTU-AMCS-SummerPractice2023\\Specflowproj\\Specflowproj.csproj",
+      "projectPath": "C:\\Users\\90407\\Desktop\\Repo\\OmSTU-AMCS-SummerPractice2023\\Specflowproj\\Specflowproj.csproj",
       "packagesPath": "C:\\Users\\90407\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\90407\\Desktop\\OmSTU repo\\OmSTU-AMCS-SummerPractice2023\\OmSTU-AMCS-SummerPractice2023\\Specflowproj\\obj\\",
+      "outputPath": "C:\\Users\\90407\\Desktop\\Repo\\OmSTU-AMCS-SummerPractice2023\\Specflowproj\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\90407\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -6706,8 +6706,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\90407\\Desktop\\OmSTU repo\\OmSTU-AMCS-SummerPractice2023\\OmSTU-AMCS-SummerPractice2023\\SquareEq\\SquareEq.csproj": {
-              "projectPath": "C:\\Users\\90407\\Desktop\\OmSTU repo\\OmSTU-AMCS-SummerPractice2023\\OmSTU-AMCS-SummerPractice2023\\SquareEq\\SquareEq.csproj"
+            "C:\\Users\\90407\\Desktop\\Repo\\OmSTU-AMCS-SummerPractice2023\\Spaceship\\Spaceship.csproj": {
+              "projectPath": "C:\\Users\\90407\\Desktop\\Repo\\OmSTU-AMCS-SummerPractice2023\\Spaceship\\Spaceship.csproj"
             }
           }
         }
