@@ -8,19 +8,19 @@
     "net7.0": []
   },
   "packageFolders": {
-    "/home/ubuntu/.nuget/packages/": {}
+    "C:\\Users\\90407\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/ubuntu/OmSTU-AMCS-SummerPractice2023/SquareEq/SquareEq.csproj",
+      "projectUniqueName": "C:\\Users\\90407\\Desktop\\OmSTU repo\\OmSTU-AMCS-SummerPractice2023\\OmSTU-AMCS-SummerPractice2023\\SquareEq\\SquareEq.csproj",
       "projectName": "SquareEq",
-      "projectPath": "/home/ubuntu/OmSTU-AMCS-SummerPractice2023/SquareEq/SquareEq.csproj",
-      "packagesPath": "/home/ubuntu/.nuget/packages/",
-      "outputPath": "/home/ubuntu/OmSTU-AMCS-SummerPractice2023/SquareEq/obj/",
+      "projectPath": "C:\\Users\\90407\\Desktop\\OmSTU repo\\OmSTU-AMCS-SummerPractice2023\\OmSTU-AMCS-SummerPractice2023\\SquareEq\\SquareEq.csproj",
+      "packagesPath": "C:\\Users\\90407\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\90407\\Desktop\\OmSTU repo\\OmSTU-AMCS-SummerPractice2023\\OmSTU-AMCS-SummerPractice2023\\SquareEq\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/ubuntu/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\90407\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
@@ -59,7 +59,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.108/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.305\\RuntimeIdentifierGraph.json"
       }
     }
   }

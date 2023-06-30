@@ -16,13 +16,21 @@ namespace Specflowproj.Steps
        private double[] result {get; set;}
        private Exception except {get; set;} 
 
-       [Given("Квадратное уравнение с коэффициентами ({string})")]
-       public void SquareEqGiven(string numbers)
+       [Given(@"Квадратное уравнение с коэффициентами \((.*), (.*), (.*)\)")]
+       public void SquareEqGiven(string a, string b, string c)
        {
             this.coef = new double[3];
-            string[] stringCoef = numbers.Split(", ");
+            string[] coefs = {a, b, c};
+            
             for(var i = 0; i < 3; i++){
-                this.coef[i] = Double.Parse(stringCoef[i]);
+                if (coefs[i] == "Double.PositiveInfinity")
+                    this.coef[i] = double.PositiveInfinity;
+                else if (coefs[i] == "Double.NegativeInfinity")
+                    this.coef[i] = double.NegativeInfinity;
+                else if (coefs[i] == "NaN")
+                    this.coef[i] = double.NaN;
+                else
+                    this.coef[i] = double.Parse(coefs[i]);
             }
        }
         
@@ -30,31 +38,27 @@ namespace Specflowproj.Steps
        public void SqEqSolve()
        {
            try{
-                result = SquareEquationLib.SquareEquation.Solve(coef[0], coef[1], coef[2]);
+                this.result = SquareEquationLib.SquareEquation.Solve(coef[0], coef[1], coef[2]);
            }
            catch(ArgumentException e){
                 except = e;
            }
        }
 
-       [Then("квадратное уравнение имеет два корня ({string}) кратности один")]
-       public void ResultTwoRoots(string resultstr)
+       [Then(@"квадратное уравнение имеет два корня \((.*), (.*)\) кратности один")]
+       public void ResultTwoRoots(double expect1, double expect2)
        {
-           Array.Sort(result);
-
-           string[] results = resultstr.Split(", ");
-           double[] expected = new double[results.Length];
-           for(var i = 0; i < results.Length; i++){
-                expected[i] = Double.Parse(results[i]);
-            }
+           double[] expected = {expect1, expect2};
+           Array.Sort(expected);
+           Array.Sort(this.result);
 
            result.Should().ContainInOrder(expected);
        }
 
-       [Then("квадратное уравнение имеет один корень {string} кратности два")]
-       public void ResultOneRoot(string expected)
+       [Then(@"квадратное уравнение имеет один корень (.*) кратности два")]
+       public void ResultOneRoot(double expected)
        {
-           result[0].Should().Be(Double.Parse(expected));
+           result[0].Should().Be(expected);
        }
 
        [Then("множество корней квадратного уравнения пустое")]
