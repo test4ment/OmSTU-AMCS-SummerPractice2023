@@ -62,7 +62,7 @@ public class Ship
         return this.canSpin;
     }
 
-    public void SetFuel(int amount){ // Лучше использовать дозаправку (AddFuel)
+    public void SetFuel(int amount){ // Лучше использовать дозаправку (AddFuel) 
         this.fuel = amount;
     }
 
