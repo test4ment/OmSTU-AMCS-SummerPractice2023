@@ -1,0 +1,12 @@
+C:\Users\90407\Desktop\Repo\OmSTU-AMCS-SummerPractice2023\Spaceship\bin\Debug\net7.0\Spaceship.deps.json
+C:\Users\90407\Desktop\Repo\OmSTU-AMCS-SummerPractice2023\Spaceship\bin\Debug\net7.0\Spaceship.dll
+C:\Users\90407\Desktop\Repo\OmSTU-AMCS-SummerPractice2023\Spaceship\bin\Debug\net7.0\Spaceship.pdb
+C:\Users\90407\Desktop\Repo\OmSTU-AMCS-SummerPractice2023\Spaceship\obj\Debug\net7.0\Spaceship.csproj.AssemblyReference.cache
+C:\Users\90407\Desktop\Repo\OmSTU-AMCS-SummerPractice2023\Spaceship\obj\Debug\net7.0\Spaceship.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\90407\Desktop\Repo\OmSTU-AMCS-SummerPractice2023\Spaceship\obj\Debug\net7.0\Spaceship.AssemblyInfoInputs.cache
+C:\Users\90407\Desktop\Repo\OmSTU-AMCS-SummerPractice2023\Spaceship\obj\Debug\net7.0\Spaceship.AssemblyInfo.cs
+C:\Users\90407\Desktop\Repo\OmSTU-AMCS-SummerPractice2023\Spaceship\obj\Debug\net7.0\Spaceship.csproj.CoreCompileInputs.cache
+C:\Users\90407\Desktop\Repo\OmSTU-AMCS-SummerPractice2023\Spaceship\obj\Debug\net7.0\Spaceship.dll
+C:\Users\90407\Desktop\Repo\OmSTU-AMCS-SummerPractice2023\Spaceship\obj\Debug\net7.0\refint\Spaceship.dll
+C:\Users\90407\Desktop\Repo\OmSTU-AMCS-SummerPractice2023\Spaceship\obj\Debug\net7.0\Spaceship.pdb
+C:\Users\90407\Desktop\Repo\OmSTU-AMCS-SummerPractice2023\Spaceship\obj\Debug\net7.0\ref\Spaceship.dll

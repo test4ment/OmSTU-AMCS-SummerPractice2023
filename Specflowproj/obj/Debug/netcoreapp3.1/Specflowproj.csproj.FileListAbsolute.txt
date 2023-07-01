@@ -1,0 +1,5 @@
+/home/ubuntu/OmSTU-AMCS-SummerPractice2023/Specflowproj/obj/Debug/netcoreapp3.1/Specflowproj.csproj.AssemblyReference.cache
+/home/ubuntu/OmSTU-AMCS-SummerPractice2023/Specflowproj/obj/Debug/netcoreapp3.1/Specflowproj.GeneratedMSBuildEditorConfig.editorconfig
+/home/ubuntu/OmSTU-AMCS-SummerPractice2023/Specflowproj/obj/Debug/netcoreapp3.1/Specflowproj.AssemblyInfoInputs.cache
+/home/ubuntu/OmSTU-AMCS-SummerPractice2023/Specflowproj/obj/Debug/netcoreapp3.1/Specflowproj.AssemblyInfo.cs
+/home/ubuntu/OmSTU-AMCS-SummerPractice2023/Specflowproj/obj/Debug/netcoreapp3.1/Specflowproj.csproj.CoreCompileInputs.cache
