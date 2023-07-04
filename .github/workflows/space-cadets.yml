@@ -16,7 +16,7 @@ jobs:
           dotnet-version: 7.0.x
 
       - name: Restore dependencies
-        run: dotnet restore dotnet restore SpaceCadets.csproj
+        run: dotnet restore SpaceCadets.csproj
 
       - name: Build
         run: dotnet build SpaceCadets.csproj --no-restore /p:ContinuousIntegrationBuild=true
