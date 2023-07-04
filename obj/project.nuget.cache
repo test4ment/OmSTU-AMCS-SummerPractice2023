@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BdYBLCA8FwQehbDPjtjwYGffqCKIn+2Ey1/1pr6SqRRz87Hstk482T7IcsnIOq9PsaoC6xq+LGRvZFbaNSwPIA==",
+  "dgSpecHash": "3DmzL94ULM1+m6a2ZogZFf2TKTvkkzPEVfjR/Rwb63t9h1e+pG6y2vui3nLIV3FJjRGPmaGbeeNl6y2d647OqA==",
   "success": true,
-  "projectFilePath": "/home/ubuntu/OmSTU-AMCS-SummerPractice2023/OmSTU-AMCS-SummerPractice2023.csproj",
+  "projectFilePath": "/home/ubuntu/OmSTU-AMCS-SummerPractice2023/SpaceCadets.csproj",
   "expectedPackageFiles": [
     "/home/ubuntu/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512"
   ],

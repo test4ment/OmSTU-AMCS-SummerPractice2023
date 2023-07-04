@@ -60,9 +60,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/ubuntu/OmSTU-AMCS-SummerPractice2023/OmSTU-AMCS-SummerPractice2023.csproj",
-      "projectName": "OmSTU-AMCS-SummerPractice2023",
-      "projectPath": "/home/ubuntu/OmSTU-AMCS-SummerPractice2023/OmSTU-AMCS-SummerPractice2023.csproj",
+      "projectUniqueName": "/home/ubuntu/OmSTU-AMCS-SummerPractice2023/SpaceCadets.csproj",
+      "projectName": "SpaceCadets",
+      "projectPath": "/home/ubuntu/OmSTU-AMCS-SummerPractice2023/SpaceCadets.csproj",
       "packagesPath": "/home/ubuntu/.nuget/packages/",
       "outputPath": "/home/ubuntu/OmSTU-AMCS-SummerPractice2023/obj/",
       "projectStyle": "PackageReference",

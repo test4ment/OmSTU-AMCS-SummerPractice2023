@@ -1,0 +1,17 @@
+/home/ubuntu/OmSTU-AMCS-SummerPractice2023/bin/Debug/net7.0/SpaceCadets
+/home/ubuntu/OmSTU-AMCS-SummerPractice2023/bin/Debug/net7.0/SpaceCadets.deps.json
+/home/ubuntu/OmSTU-AMCS-SummerPractice2023/bin/Debug/net7.0/SpaceCadets.runtimeconfig.json
+/home/ubuntu/OmSTU-AMCS-SummerPractice2023/bin/Debug/net7.0/SpaceCadets.dll
+/home/ubuntu/OmSTU-AMCS-SummerPractice2023/bin/Debug/net7.0/SpaceCadets.pdb
+/home/ubuntu/OmSTU-AMCS-SummerPractice2023/bin/Debug/net7.0/Newtonsoft.Json.dll
+/home/ubuntu/OmSTU-AMCS-SummerPractice2023/obj/Debug/net7.0/SpaceCadets.csproj.AssemblyReference.cache
+/home/ubuntu/OmSTU-AMCS-SummerPractice2023/obj/Debug/net7.0/SpaceCadets.GeneratedMSBuildEditorConfig.editorconfig
+/home/ubuntu/OmSTU-AMCS-SummerPractice2023/obj/Debug/net7.0/SpaceCadets.AssemblyInfoInputs.cache
+/home/ubuntu/OmSTU-AMCS-SummerPractice2023/obj/Debug/net7.0/SpaceCadets.AssemblyInfo.cs
+/home/ubuntu/OmSTU-AMCS-SummerPractice2023/obj/Debug/net7.0/SpaceCadets.csproj.CoreCompileInputs.cache
+/home/ubuntu/OmSTU-AMCS-SummerPractice2023/obj/Debug/net7.0/SpaceCadets.csproj.CopyComplete
+/home/ubuntu/OmSTU-AMCS-SummerPractice2023/obj/Debug/net7.0/SpaceCadets.dll
+/home/ubuntu/OmSTU-AMCS-SummerPractice2023/obj/Debug/net7.0/refint/SpaceCadets.dll
+/home/ubuntu/OmSTU-AMCS-SummerPractice2023/obj/Debug/net7.0/SpaceCadets.pdb
+/home/ubuntu/OmSTU-AMCS-SummerPractice2023/obj/Debug/net7.0/SpaceCadets.genruntimeconfig.cache
+/home/ubuntu/OmSTU-AMCS-SummerPractice2023/obj/Debug/net7.0/ref/SpaceCadets.dll
