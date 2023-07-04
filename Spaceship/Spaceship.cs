@@ -1,7 +1,83 @@
-﻿namespace Spaceship;
+﻿using System;
+using System.Collections.Generic;
+using System.Runtime.InteropServices;
+using System.Threading;
+
+namespace Spaceship;
+
+
+public class PoolGuard : IDisposable
+{
+    private static bool disposed;
+    private static List<Ship> _available = new List<Ship>();
+    private static List<Ship> _inUse = new List<Ship>();
+
+    public void Dispose()
+    {
+        Dispose(disposing: true);
+        GC.SuppressFinalize(this);
+    }
+
+    protected virtual void Dispose(bool disposing)
+    {
+        if (disposed) return;
+
+        if (disposing)
+        {
+            this.Dispose();
+        }
+
+        disposed = true;
+    }
+
+    public static Ship GetObject()
+    {
+        lock (_available)
+        {
+            if (_available.Count != 0)
+            {
+                Ship po = _available[0];
+                _inUse.Add(po);
+                _available.RemoveAt(0);
+                return po;
+            }
+            else
+            {
+                Ship po = new Ship();
+                _inUse.Add(po);
+                return po;
+            }
+        }
+    }
+
+    public static void ReleaseObject(Ship po)
+    {
+        CleanUp(po);
+
+        lock (_available)
+        {
+            _available.Add(po);
+            _inUse.Remove(po);
+        }
+    }
+
+    protected static void CleanUp(Ship po){
+        po.SetLoc(0, 0); 
+        po.SetSpeed(0, 0);
+        po.SetMovingState(false);
+        po.SetRotation(0);
+        po.SetRotatingSpeed(0);
+        po.SetSpinningState(false);
+        po.SetFuel(0);
+        po.SetFuelUsage(0);
+    }
+}
 
 public class Ship
 {
+    bool disposed = false;
+
+
     private double[]? location; 
     private double[]? instantSpeed;
     private bool canMove = true;
