@@ -1,0 +1,17 @@
+/home/ubuntu/OmSTU-AMCS-SummerPractice2023/obj/Debug/net7.0/OmSTU-AMCS-SummerPractice2023.csproj.AssemblyReference.cache
+/home/ubuntu/OmSTU-AMCS-SummerPractice2023/obj/Debug/net7.0/OmSTU-AMCS-SummerPractice2023.GeneratedMSBuildEditorConfig.editorconfig
+/home/ubuntu/OmSTU-AMCS-SummerPractice2023/obj/Debug/net7.0/OmSTU-AMCS-SummerPractice2023.AssemblyInfoInputs.cache
+/home/ubuntu/OmSTU-AMCS-SummerPractice2023/obj/Debug/net7.0/OmSTU-AMCS-SummerPractice2023.AssemblyInfo.cs
+/home/ubuntu/OmSTU-AMCS-SummerPractice2023/obj/Debug/net7.0/OmSTU-AMCS-SummerPractice2023.csproj.CoreCompileInputs.cache
+/home/ubuntu/OmSTU-AMCS-SummerPractice2023/bin/Debug/net7.0/OmSTU-AMCS-SummerPractice2023
+/home/ubuntu/OmSTU-AMCS-SummerPractice2023/bin/Debug/net7.0/OmSTU-AMCS-SummerPractice2023.deps.json
+/home/ubuntu/OmSTU-AMCS-SummerPractice2023/bin/Debug/net7.0/OmSTU-AMCS-SummerPractice2023.runtimeconfig.json
+/home/ubuntu/OmSTU-AMCS-SummerPractice2023/bin/Debug/net7.0/OmSTU-AMCS-SummerPractice2023.dll
+/home/ubuntu/OmSTU-AMCS-SummerPractice2023/bin/Debug/net7.0/OmSTU-AMCS-SummerPractice2023.pdb
+/home/ubuntu/OmSTU-AMCS-SummerPractice2023/obj/Debug/net7.0/OmSTU-AMCS-SummerPractice2023.dll
+/home/ubuntu/OmSTU-AMCS-SummerPractice2023/obj/Debug/net7.0/refint/OmSTU-AMCS-SummerPractice2023.dll
+/home/ubuntu/OmSTU-AMCS-SummerPractice2023/obj/Debug/net7.0/OmSTU-AMCS-SummerPractice2023.pdb
+/home/ubuntu/OmSTU-AMCS-SummerPractice2023/obj/Debug/net7.0/OmSTU-AMCS-SummerPractice2023.genruntimeconfig.cache
+/home/ubuntu/OmSTU-AMCS-SummerPractice2023/obj/Debug/net7.0/ref/OmSTU-AMCS-SummerPractice2023.dll
+/home/ubuntu/OmSTU-AMCS-SummerPractice2023/bin/Debug/net7.0/Newtonsoft.Json.dll
+/home/ubuntu/OmSTU-AMCS-SummerPractice2023/obj/Debug/net7.0/OmSTU-AMCS-SummerPractice2023.csproj.CopyComplete
